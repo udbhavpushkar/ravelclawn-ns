@@ -1,0 +1,23 @@
+.nav{
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+}
+
+.items:hover{
+  cursor: pointer;
+  color: bisque;
+}
+
+.rutvik{
+  border: 1px solid white;
+}
+
+.small{
+  color: burlywood;
+}
+
+.large{
+  color: darkorange;
+}
