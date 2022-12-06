@@ -1,4 +1,6 @@
+import Counting from "./components/Counting" //"./components/Counting/index.js"
 import Navbar from "./components/navbar"
+import NumberGame from "./components/NumberGame"
 
 // node -v
 //JSX =>
@@ -9,6 +11,8 @@ function App() {
   return (
     <div>
       <Navbar />
+      {/* <Counting /> */}
+      <NumberGame />
     </div>
   )
 }
