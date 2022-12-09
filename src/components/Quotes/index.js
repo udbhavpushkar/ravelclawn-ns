@@ -36,23 +36,6 @@ const Quotes = () => {
   const [quote, setQuote] = useState("")
   const [author, setAuthor] = useState("")
 
-  //useEffect without dependency is component on update
-  useEffect(() => {
-    console.log("Something")
-    console.log("Updated in our component")
-  })
-
-  //useEffect with empty dependency array component on mount
-  useEffect(() => {
-    console.log("Componnet")
-    console.log("mounted")
-  }, [])
-
-  useEffect(() => {
-    console.log("Quote is")
-    console.log("been updated")
-  }, [quote])
-
   const deleteQuote = (i) => {
     let myData = [...quoteData]
     myData.splice(i, 1) // delete element of index i from an array
@@ -89,7 +72,7 @@ const Quotes = () => {
       </div>
       <h1>All Quotes</h1>
       {quoteData.map((item, index) => {
-        return <QuoteBox item={item} index={index} deleteQuote={deleteQuote} />
+        return <QuoteBox key={index} item={item} index={index} deleteQuote={deleteQuote} />
       })}
     </div>
   )
