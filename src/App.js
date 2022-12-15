@@ -1,9 +1,14 @@
+import Adnaan from "./components/Adnaan"
 import Counting from "./components/Counting" //"./components/Counting/index.js"
+import Forms from "./components/Forms"
+import Girish from "./components/Girish"
 import Navbar from "./components/navbar"
 import Nest from "./components/Nest"
 import NumberGame from "./components/NumberGame"
 import PasswordValidator from "./components/PasswordValidator"
+import Prashant from "./components/Prashant"
 import Quotes from "./components/Quotes"
+import Raghu from "./components/Raghu"
 
 // node -v
 //JSX =>
@@ -18,7 +23,12 @@ function App() {
       {/* <NumberGame /> */}
       {/* <Quotes /> */}
       {/* <Nest /> */}
-      <PasswordValidator />
+      {/* <PasswordValidator /> */}
+      {/* <Adnaan /> */}
+      {/* <Girish /> */}
+      {/* <Prashant /> */}
+      {/* <Raghu /> */}
+      <Forms />
     </div>
   )
 }
