@@ -1,4 +1,5 @@
 import Adnaan from "./components/Adnaan"
+import Control from "./components/Control"
 import Counting from "./components/Counting" //"./components/Counting/index.js"
 import Forms from "./components/Forms"
 import Girish from "./components/Girish"
@@ -9,6 +10,14 @@ import PasswordValidator from "./components/PasswordValidator"
 import Prashant from "./components/Prashant"
 import Quotes from "./components/Quotes"
 import Raghu from "./components/Raghu"
+import Timer from "./components/Timer"
+
+import "./App.css"
+import Twitter from "./components/Twitter"
+import Nav from "./components/Nav"
+import MainPage from "./components/MainPage"
+import { Provider } from "react"
+import Footer from "./components/Footer"
 
 // node -v
 //JSX =>
@@ -18,17 +27,9 @@ import Raghu from "./components/Raghu"
 function App() {
   return (
     <div>
-      {/* <Navbar /> */}
-      {/* <Counting /> */}
-      {/* <NumberGame /> */}
-      {/* <Quotes /> */}
-      {/* <Nest /> */}
-      {/* <PasswordValidator /> */}
-      {/* <Adnaan /> */}
-      {/* <Girish /> */}
-      {/* <Prashant /> */}
-      {/* <Raghu /> */}
-      <Forms />
+      <Nav />
+      <MainPage />
+      <Footer />
     </div>
   )
 }
